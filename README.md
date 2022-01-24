@@ -11,7 +11,7 @@ _You can get a local copy of this project and use it for developing purposes or 
 ### Clone it from GitHub :hammer_and_wrench:
 
     git init
-    git clone https://github.com/Sofia-Microb/ringo_app_new.git
+    git clone https://github.com/Sofia-Microb/tenzies-react.git
     npm install
     npm start
 
