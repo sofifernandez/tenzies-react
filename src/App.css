@@ -1,38 +1,118 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0b2434;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  font-family: "Dongle", sans-serif;
+}
+
+main {
+  background-color: #dce0eb;
+  height: max-content;
+  max-width: 800px;
+  border-radius: 5px;
+  border: solid 0.5rem rgb(214, 116, 201);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Dongle", sans-serif;
+  margin-top: 10%;
+}
+p {
+  font-family: "Dongle", sans-serif;
+}
+
+.title {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.instructions {
+  font-size: 2.3rem;
+  margin-top: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  cursor: pointer;
+}
+
+.die-num {
+  font-size: 2.7rem;
+}
+
+.roll-dice {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5f5599;
   color: white;
+  font-size: 2.7rem;
+  font-family: "Dongle", sans-serif;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.roll-dice:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.text-timer-sect {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.timer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10rem;
+}
+
+.Go-btn {
+  height: 3rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #cc5d31;
+  color: white;
+  font-size: 2.7rem;
+  font-family: "Dongle", sans-serif;
+  cursor: pointer;
+}
+
+.Go-btn:disabled {
+  background-color: #559977;
+}
+
+.timer-counter {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Dongle", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
